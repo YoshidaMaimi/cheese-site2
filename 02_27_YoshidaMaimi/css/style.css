@@ -1,0 +1,427 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+/* ページの基本設定 */
+/* ページの余白をゼロにする */
+body{
+    margin:0;
+    padding:0;
+     /*ページの背景色を指定する  */
+    background-color:white;
+    /* テキストの色を指定する */
+    color: #333333;
+    /* テキストサイズと行間を指定する */
+    font-size: 15px;
+    line-height: 2;
+}
+/* ブラウザの既定スタイルを解除する */
+/* 見出しと段落上マージンを無くす */
+p,h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+}
+/* 画像下の余白を無くす */
+ing{
+    vertical-align: bottom;
+}
+/* リスト項目の余白を無くす */
+ul{
+    margin: 0;
+    padding:0;
+}
+/* 訪問前後のリンク文字の色を指定する */
+a{
+    color: #3583aa;
+}
+a:visited{
+    color: #788d98;
+}
+/* リンク文字の下線の表示/非表示を指定 */
+a{
+    color: #3583aa;
+    text-decoration: none;
+}
+a:visited{
+    color: #788d98
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* レイアウト詳細*/
+/* ヘッダーエリアのサイズを設定 */
+header{
+    /* widows: 960px; */
+    width: 960px;
+    height: 100px;
+    /* ヘッダーエリアの位置指定 */
+    margin: 0 auto;
+    /* flex: auto; */
+    display: flex;
+}
+/* ロゴとメニューの位置を指定する */
+/* .logo{
+    float: left; */
+    /* 位置調整 */
+    /* margin-top: 50px;
+} */
+.global-nav{
+    display: flex;
+    /* float: right; */
+    /* 位置調整 */
+    /* margin-top: 60px; */
+}
+/* menu項目を横に並べる */
+.global-nav li{
+    /* float: left; */
+    /* menu項目の細部を調整 */
+    margin: 0 20px;
+    font-size: 20px;
+    /* menu文字の行頭アイコンを非表示にする */
+    list-style: none;
+}
+/* menu文字リンクに色を設定する */
+.global-nav li a{
+    color:#333333
+}
+/* menu文字の下線を設定する */
+.global-nav li a:hover{
+    border-bottom: 2px solid #333333;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+/* floatプロパティを解除する */
+#wrap{
+    clear: both;
+}
+/* コンテンツエリアを中央に揃える */
+.content{
+    width: 960px;
+    margin:0 auto;
+}
+/* フッターのスタイルを指定する */
+footer{
+    text-align: center;
+    color: white;
+    /* 余白を設定する */
+    padding: 20px 0;
+    background-color: #333333;
+}
+/* コピーライト表記の文字サイズを設定する */
+footer small{
+    font-size: 12px;
+}
+/* main vidual */
+section.main {
+    background-image: url(..//img/mainbg.png);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.main h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+    padding-top: 100px;
+}
+.main p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* about */
+.ABOUT h2{
+    color: #f1d558fd;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+section.ABOUT {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+p.ABOUT {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.ABOUT_img {
+    display: flex;
+}
+.ABOUT_img p img{
+    width: 100%;
+}
+/* course */
+.COURSE h2{
+    color:black;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+section.COURSE {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+p.COURSE {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.courses{
+    background-color: #eaeaea;
+}
+.course1 {
+    display: flex;
+}
+img.course1_img {
+    width: 50%;
+}
+.course1_text {
+    padding: 18px;
+}
+h3.course1_text {
+    font-weight: bold;
+}
+.course2 {
+    display: flex;
+}
+img.course2_img {
+    width: 50%;
+}
+.course2_text {
+    padding: 18px;
+}
+h3.course2_text {
+    font-weight: bold;
+}
+.course3 {
+    display: flex;
+}
+img.course3_img {
+    width: 50%;
+}
+.course3_text {
+    padding: 18px;
+}
+h3.course3_text {
+    font-weight: bold;
+}
+/* NEWS */
+.NEWS h2{
+    color:yellow;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+section.NEWS {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/* .NEWS_box {
+    display: flex;
+    margin: 30px;
+} */
+.NEWS_box {
+    display: flex;
+    margin: 30px auto;
+    width: 960px;
+}
+section.NEWS1 {
+    margin: auto;
+}
+section.NEWS3 {
+    margin: auto;
+}
+p.NEWS__date {
+    float: left;
+}
+p.NEWS__text {
+    float: left;
+    padding: 1px;
+    font-size: small;
+}
+/* NEWS botton */
+a {
+    margin: 0 auto;
+}
+.btn a{
+    background-color: #f1d558fd;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Bitter',serif;
+    width: 185px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px solid #f1d558fd;
+}
+.btn a:hover{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #f1d558fd;
+}
+/* ACCESS */
+.ACCESS h2{
+    color:black;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+p.ACCESS {
+    margin: 50px;
+    font-size: 18px;
+}
+/* iframe {
+    width: 100%;
+    height: 400px;
+} */
+iframe {
+    width: 960px;
+    height: 400px;
+}
+section.ACCESS {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: #eaeaea;
+}
+table {
+    margin: 50px auto;
+}
+tbody {
+    text-align: left;
+}
+/* CONTACT */
+.CONTACT h2{
+    color:black;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+section.CONTACT {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+p.CONTACT {
+    margin: 30px auto;
+    font-size: 18px;
+}
+p.attention1 {
+    margin: 20px auto;
+    font-size: 18px;
+}
+p.attention2 {
+    margin: 20px auto;
+    font-size: 18px;
+}
+.form {
+    padding: 30px 50px;
+}
+form.form {
+    background-color: #eaeaea;
+}
+/* tr td */
+table {
+    border-spacing: 0;
+    margin: 50px auto;
+}
+tbody {
+    text-align: left;
+}
+th {
+    border-right: 1px solid black;
+    vertical-align: middle;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+td {
+    padding-left: 10px;
+    border-right: 1px solid black;
+    vertical-align: middle;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+/* dl dt */
+/* .form dl dt{
+    width: 165px;
+    padding: 10px 0;
+    float: left;
+    clear:both;
+}
+.form dl dd{
+    padding:22px 0;
+}
+.form .name{
+    width:300px;
+    height:30px;
+}
+.form .email{
+    width:300px;
+    height:30px;
+}
+.form .type{
+    width:300px;
+    height:30px;
+}
+p.form-detail5-1 {
+    margin-right: 202px;
+}
+p.form-detail5-2 {
+    margin-left: 98px;
+}
+p.form-detail5-3 {
+    margin-left: 218px;
+}
+p.form-detail5-4 {
+    margin-left: 68px;
+}
+.form .detail{
+    width:300px;
+    height:160px;
+}
+span.required {
+    float: left;
+}
+p.form-title4 {
+    float: left;
+}
+p.form-title5 {
+    float: left;
+}
+p.form-title {
+    float: left;
+} */
+
+/* 送信ボタン */
+button {
+    margin: 0 auto;
+}
+.form button{
+    background-color: #f1d558fd;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Bitter',serif;
+    width: 185px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px solid #f1d558fd;
+}
+.form button:hover{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #f1d558fd;
+}
